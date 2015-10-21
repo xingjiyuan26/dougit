@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="douban.lsx.com.douban" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".UI.SplashActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.MainTabActivity"
+            android:label="@string/readbean" >
+        </activity>
+        <activity
+            android:name=".UI.testActivity"
+            android:label="@string/title_activity_test" >
+        </activity>
+        <activity
+            android:name=".UI.testActivity2"
+            android:label="@string/title_activity_test_activity2" >
+        </activity>
+        <activity
+            android:name=".UI.MeActivity"
+            android:label="@string/title_activity_me" >
+        </activity>
+    </application>
+
+</manifest>

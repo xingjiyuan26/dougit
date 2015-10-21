@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="douban.lsx.com.douban.UI.MeActivity">
+
+    <include layout="@layout/titlebar"></include>
+    <!--
+    include 包含某个布局
+    android:cacheColorHint 取消listview的背景
+    android:divider listview 里面两个item之间的背景
+    -->
+    <ListView
+        android:layout_marginTop="35dp"
+        android:id="@+id/melistview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="3.0dip"
+        android:layout_weight="1.0"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/transparent"
+        android:dividerHeight="5.0dip"
+        android:paddingTop="5.0dip"
+        android:scrollbarStyle="outsideInset"/>
+
+</RelativeLayout>
